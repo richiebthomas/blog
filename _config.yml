@@ -1,8 +1,9 @@
 # Site settings
 title:          Tail
 description:    "Minimal Jekyll blog theme"
-baseurl:        "/tail"
-url:
+baseurl:        "/blog"       # this should be the *repository name*, prefixed with a slash
+url:            "https://richiebthomas.github.io"  # your GitHub Pages domain (without a trailing slash)
+
 
 # https://jekyllrb.com/docs/configuration/options/
 timezone: Asia/Kolkata
