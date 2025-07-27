@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 sticky: true
 hidden: true
 ---
-![Richie Thomas](/blog/assests/images/richie.png)
+![Richie Thomas](/blog/assets/images/richie.png)
 
 Hello there! I'm **Richie Thomas**, a 20-year-old IT engineering graduate passionate about technology, learning, and sharing my journey with the world. Welcome to my personal corner of the internet where I document my professional growth, share insights from my experiences, and occasionally dive into my personal interests and hobbies.
 
