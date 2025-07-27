@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Sticky Posts | Tail</title>
+<title>Managing Excerpt | Richie Thomas</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Sticky Posts" />
-<meta name="author" content="Your Name" />
+<meta property="og:title" content="Managing Excerpt" />
+<meta name="author" content="Richie Thomas" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature." />
-<meta property="og:description" content="Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature." />
-<link rel="canonical" href="https://richiebthomas.github.io/blog/sticky-posts" />
-<meta property="og:url" content="https://richiebthomas.github.io/blog/sticky-posts" />
-<meta property="og:site_name" content="Tail" />
+<meta name="description" content="Richie Thomas’s blog" />
+<meta property="og:description" content="Richie Thomas’s blog" />
+<link rel="canonical" href="https://richiebthomas.github.io/blog/format/managing-excerpt" />
+<meta property="og:url" content="https://richiebthomas.github.io/blog/format/managing-excerpt" />
+<meta property="og:site_name" content="Richie Thomas" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-17T00:00:00+05:30" />
+<meta property="article:published_time" content="2022-10-02T00:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Sticky Posts" />
+<meta property="twitter:title" content="Managing Excerpt" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Your Name"},"dateModified":"2022-09-17T00:00:00+05:30","datePublished":"2022-09-17T00:00:00+05:30","description":"Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature.","headline":"Sticky Posts","mainEntityOfPage":{"@type":"WebPage","@id":"https://richiebthomas.github.io/blog/sticky-posts"},"url":"https://richiebthomas.github.io/blog/sticky-posts"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Richie Thomas"},"dateModified":"2022-10-02T00:00:00+05:30","datePublished":"2022-10-02T00:00:00+05:30","description":"Richie Thomas’s blog","headline":"Managing Excerpt","mainEntityOfPage":{"@type":"WebPage","@id":"https://richiebthomas.github.io/blog/format/managing-excerpt"},"url":"https://richiebthomas.github.io/blog/format/managing-excerpt"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -43,7 +43,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/blog/assets/favicon/apple-touch-icon.png">
 
   <!-- RSS -->
-  <link type="application/atom+xml" rel="alternate" href="https://richiebthomas.github.io/blog/feed.xml" title="Tail" />
+  <link type="application/atom+xml" rel="alternate" href="https://richiebthomas.github.io/blog/feed.xml" title="Richie Thomas" />
 
 </head>
 
@@ -51,7 +51,7 @@
   <nav class="nav">
   <div class="nav-container">
     <a href="/blog/">
-      <h2 class="nav-title">Tail</h2>
+      <h2 class="nav-title">Richie Thomas</h2>
     </a>
     <ul>
       <li><a href="/blog/">Posts</a></li>
@@ -95,27 +95,34 @@
   <div data-pagefind-ignore class="post-info">
     <span>Written by</span>
     
-        Your Name
+        Richie Thomas
     
 
     
       <br>
-      <span>on&nbsp;</span><time datetime="2022-09-17 00:00:00 +0530">September 17, 2022</time>
+      <span>on&nbsp;</span><time datetime="2nd Oct 2022">October 02, 2022</time>
     
   </div>
 
-  <h1 data-pagefind-ignore class="post-title">Sticky Posts</h1>
+  <h1 data-pagefind-ignore class="post-title">Managing Excerpt</h1>
   <div class="post-line"></div>
 
-  <p>Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature.<!--more--> There is no limit on the number of sticky posts you can have. Although do note that each page will show all your sticky posts + the paginated posts. So if you have 4 sticky posts and 5 posts per page, each page can display up to 9 posts.</p>
+  <p>You can customise the excerpt (the text displayed below each post on the homepage) using the <code class="language-plaintext highlighter-rouge">excerpt-separator</code>.<!--more--> Here’s how you can do so!</p>
 
-<h2 id="making-a-post-sticky">Making a post “sticky”</h2>
+<h2 id="steps">Steps</h2>
 
-<p>Add <code class="language-plaintext highlighter-rouge">sticky: true</code> to the frontmatter of your blog post.</p>
+<ol>
+  <li>
+    <p>Add <code class="language-plaintext highlighter-rouge">excerpt_separator: &lt;!--more--&gt;</code> to the frontmatter of your blog post.</p>
+  </li>
+  <li>
+    <p>Insert this <code class="language-plaintext highlighter-rouge">&lt;!--more--&gt;</code> at where you would like the excerpt to cut off in your blog post.</p>
+  </li>
+</ol>
 
-<h3 id="exclude-sticky-post-from-paginated-posts">Exclude sticky post from paginated posts</h3>
+<h3 id="note">Note</h3>
 
-<p>By default, sticky posts are still included in the paginated posts. To exclude a sticky post from paginated posts, add <code class="language-plaintext highlighter-rouge">hidden: true</code> to the frontmatter of that blog post.</p>
+<p>This follows <a href="https://jekyllrb.com/docs/posts/#post-excerpts">Jekyll’s recommended way of managing excerpts</a>.</p>
 
 
 
@@ -123,7 +130,7 @@
     <!-- Adapted from: https://codepen.io/shannonkay/pen/WNaQWxv --> 
 <!-- link to reply by email as comments -->
 <div class="comments">
-  <a href="mailto:?subject=%5BBlog%20Reply%5D%20Sticky Posts">Reply by
+  <a href="mailto:richiebt2004@gmail.com?subject=%5BBlog%20Reply%5D%20Managing Excerpt">Reply by
     email
     <svg class="email-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 8.046H11V6.119c0-.921-.9-1.446-1.524-.894l-5.108 4.49a1.2 1.2 0 0 0 0 1.739l5.108 4.49c.624.556 1.524.027 1.524-.893v-1.928h2a3.023 3.023 0 0 1 3 3.046V19a5.593 5.593 0 0 0-1.5-10.954Z"/>
     </svg>
@@ -140,10 +147,6 @@
 
 <div class="pagination">
   
-    <a href="/blog/pagination-post" class="left arrow">&#8592;</a>
-  
-  
-    <a href="/blog/posts-without-date" class="right arrow">&#8594;</a>
   
 
   <a href="#" class="top">Top</a>
@@ -155,7 +158,7 @@
 
   <footer>
   <span>
-    &copy; <time datetime="2025-07-27 18:35:19 +0530">2025</time> Your Name. Made with Jekyll using the <a href="https://github.com/jitinnair1/tail">Tail</a> theme.
+    &copy; <time datetime="2025-07-27 18:55:23 +0530">2025</time> Richie Thomas. Made with Jekyll using the <a href="https://github.com/jitinnair1/tail">Tail</a> theme.
   </span>
 </footer>
 
