@@ -21,18 +21,9 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Download Pagefind
-        run: |
-          mkdir -p _bin
-          # Get the latest version
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/CloudCannon/pagefind/releases/latest | grep '"tag_name"' | cut -d'"' -f4)
-          echo "Latest pagefind version: $LATEST_VERSION"
-          # Download the binary
-          curl -L -o pagefind.tar.gz "https://github.com/CloudCannon/pagefind/releases/download/${LATEST_VERSION}/pagefind-${LATEST_VERSION}-x86_64-unknown-linux-musl.tar.gz"
-          tar -xzf pagefind.tar.gz
-          mv pagefind _bin/pagefind
-          chmod +x _bin/pagefind
-          rm pagefind.tar.gz
+
+      - name: Make Pagefind executable
+        run: chmod +x _bin/pagefind
 
       - name: Build site with Jekyll
         run: bundle exec jekyll build
