@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Richie Thomas](/blog/assets/images/richie.png){:style="width:50%;"}
 
-Hi, I’m **Richie B. Thomas**, a final-year Information Technology undergraduate at Fr. C. Rodrigues Institute of Technology, India. I build things that solve real problems — whether it’s a hardware-accelerated AI system on an FPGA, a gamified mobile app, or a full-stack web platform built under tight deadlines.
+Hi, I’m **Richie B. Thomas**, a final-year Information Technology undergraduate at Fr. C. Rodrigues Institute of Technology, India. I build things that solve real problems.
 
 ---
 
@@ -26,7 +26,7 @@ Over the past two years, I’ve done **5 internships**, each giving me exposure 
 - **Sports Mentoring Infusion** – Created a React Native + Node.js app for mentoring sports students. Integrated habit tracking and gamification features to boost user engagement by 65%.
 - **GetFly Technologies** – Developed a campus ERP system using Flutter for a college with 1,000+ students. Unified multiple codebases into a scalable solution.
 - **Bayside Sports** – Delivered a React.js + Laravel SSR web platform that improved page load and booking flows, helping convert users faster.
-- **FCRIT (PHP Developer)** – My first major solo project. I developed a fully functional RBAC-based campus management system still in use at my college.
+- **FCRIT (PHP Developer)** – My first major project. I maintained a fully functional RBAC-based campus management system still in use at my college.
 
 Each of these experiences taught me how to work with real users, real bugs, and real deadlines.
 
@@ -43,19 +43,6 @@ I’m a full-stack developer comfortable across the stack — frontend, backend,
 **Tools & Platforms:** Docker, AWS, GitHub Actions, Firebase, PYNQ  
 **Approach:** Agile, TDD, Microservices, Clean Architecture
 
----
-
-## Projects That Represent Me
-
-Some of the projects I’ve enjoyed working on:
-
-- **Investment Platform (MERN Stack)** – Built during a 24-hour hackathon. Supports portfolio tracking and auto-trading with real-time WebSockets.
-- **Learning Management System** – A Flutter app with Firebase backend for managing content and assessments.
-
-
-You can explore more on my [GitHub](https://github.com/richiebthomas).
-
----
 
 ## Why I Built This Blog
 
