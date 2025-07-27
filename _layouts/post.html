@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div data-pagefind-body class="post">
+  <div data-pagefind-ignore class="post-info">
+    <span>Written by</span>
+    {% if page.author %}
+        {{ page.author }}
+    {% else %}
+        {{ site.author.name }}
+    {% endif %}
+
+    {% if page.date and page.lastmod %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span>and last updated on&nbsp;</span><time datetime="{{ page.lastmod }}">{{ page.lastmod | date: "%B %d, %Y" }}</time>
+    {% elsif page.date and page.showlastmod %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span> and last updated on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>
+    {% elsif page.date %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% else %}
+    <br>
+      <span>on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
+
+  <h1 data-pagefind-ignore class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+
+  {% if site.comments or page.comments %}
+    {% include comments.html %}
+  {% endif %}
+
+  <div id="footnote-popup"></div>
+  <script type="module" src="{{ '/assets/js/footnotes.js' | relative_url }}"></script>
+
+</div>
+
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>
