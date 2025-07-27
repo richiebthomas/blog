@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-![Richie Thomas](/blog/assets/images/richie.png)
+![Richie Thomas](/blog/assets/images/richie.png){:style="width:50%;"}
 
 Hi, I’m **Richie B. Thomas**, a final-year Information Technology undergraduate at Fr. C. Rodrigues Institute of Technology, India. I build things that solve real problems — whether it’s a hardware-accelerated AI system on an FPGA, a gamified mobile app, or a full-stack web platform built under tight deadlines.
 

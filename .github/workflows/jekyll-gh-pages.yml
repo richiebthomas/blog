@@ -21,6 +21,13 @@ jobs:
           gem install bundler
           bundle install
 
+      - name: Download Pagefind
+        run: |
+          mkdir -p _bin
+          curl -L https://github.com/CloudCannon/pagefind/releases/latest/download/pagefind-v0.12.0-x86_64-unknown-linux-musl.tar.gz | tar -xz
+          mv pagefind _bin/pagefind
+          chmod +x _bin/pagefind
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build
 
