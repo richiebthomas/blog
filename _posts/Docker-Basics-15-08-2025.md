@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker Tutorial: Running MongoDB and Mongo Express (and Fixing the Common Name Mismatch Error)"
+title: "Running MongoDB and Mongo Express on Docker"
 date: 15th Aug 2025
 tags: Docker, MongoDB, MongoExpress, Troubleshooting
 excerpt_separator: <!--more-->
