@@ -6,7 +6,7 @@ tags: Docker, MongoDB, MongoExpress, Troubleshooting
 excerpt_separator: <!--more-->
 ---
 
-When I'm learning Docker, one of the best starter projects is to run a database and a web UI together. In this tutorial, I'll set up **MongoDB** and **Mongo Express** so I can manage my database right from my browser.<!--more-->  
+When learning Docker, one of the best starter projects is to run a database and a web UI together. In this tutorial, I'll set up **MongoDB** and **Mongo Express** so I can manage my database right from my browser.<!--more-->  
 But here's the twist: I'll also walk through a *very common mistake* — naming mismatches — that prevents Mongo Express from connecting, and how to fix it for good.
 
 ---
@@ -171,4 +171,4 @@ docker run -d -p 8081:8081 \
 ![Mongo Express Dashboard](https://raw.githubusercontent.com/richiebthomas/blog/refs/heads/main/assets/images/Docker-Basics-15-08-2025/Screenshot%202025-08-15%20150510.png "Mongo Express Dashboard")
 *The Mongo Express dashboard after a successful connection*
 
-```
+
