@@ -168,7 +168,7 @@ docker run -d -p 8081:8081 \
 
 ---
 
-![Mongo Express Dashboard](https://github.com/richiebthomas/blog/blob/main/assets/images/Docker-Basics-15-08-2025/Screenshot%202025-08-15%20150510.png "Mongo Express Dashboard")
+![Mongo Express Dashboard](https://raw.githubusercontent.com/richiebthomas/blog/refs/heads/main/assets/images/Docker-Basics-15-08-2025/Screenshot%202025-08-15%20150510.png "Mongo Express Dashboard")
 *The Mongo Express dashboard after a successful connection*
 
 ```
