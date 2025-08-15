@@ -73,7 +73,36 @@ Mongo Express tries to connect to `mongo:27017` — but my database container is
 ## Step 3 — The Error I Saw
 
 The Mongo Express logs showed:
-![Mongo Express Error Screenshot](https://raw.githubusercontent.com/richiebthomas/blog/refs/heads/main/assets/images/Docker-Basics-15-08-2025/Screenshot%202025-08-15%20151626.png "Mongo Express Connection Error")
+```bash
+Node.js v18.20.3
+Waiting for mongo:27017...
+No custom config.js found, loading config.default.js
+Welcome to mongo-express 1.0.2
+------------------------
+Could not connect to database using connectionString: mongo://admin:****@mongo:27017/"
+/app/node_modules/mongodb/lib/sdam/topology.js:285
+                const timeoutError = new error_1.MongoServerSelectionError(`Server selection timed out after ${serverSelectionTimeoutMS} ms`, this.description);
+                                     ^
+MongoServerSelectionError: getaddrinfo ENOTFOUND mongodb
+    at Timeout._onTimeout (/app/node_modules/mongodb/lib/sdam/topology.js:285:38)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'mongo:27017' => ServerDescription {
+        address: 'mongo:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 1742034,
+        lastWriteDate: 0,
+```
 *The Mongo Express container logs after attempting to connect to a wrong container*
 
 In plain English:
