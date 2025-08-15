@@ -174,9 +174,37 @@ But then I ran Mongo Express like this:</p>
 
 <h2 id="step-3--the-error-i-saw">Step 3 — The Error I Saw</h2>
 
-<p>The Mongo Express logs showed:
-<img src="https://raw.githubusercontent.com/richiebthomas/blog/refs/heads/main/assets/images/Docker-Basics-15-08-2025/Screenshot%202025-08-15%20151626.png" alt="Mongo Express Error Screenshot" title="Mongo Express Connection Error" />
-<em>The Mongo Express container logs after attempting to connect to a wrong container</em></p>
+<p>The Mongo Express logs showed:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Node.js v18.20.3
+Waiting <span class="k">for </span>mongo:27017...
+No custom config.js found, loading config.default.js
+Welcome to mongo-express 1.0.2
+<span class="nt">------------------------</span>
+Could not connect to database using connectionString: mongo://admin:<span class="k">****</span>@mongo:27017/<span class="s2">"
+/app/node_modules/mongodb/lib/sdam/topology.js:285
+                const timeoutError = new error_1.MongoServerSelectionError(</span><span class="sb">`</span>Server selection timed out after <span class="k">${</span><span class="nv">serverSelectionTimeoutMS</span><span class="k">}</span> ms<span class="sb">`</span><span class="s2">, this.description);
+                                     ^
+MongoServerSelectionError: getaddrinfo ENOTFOUND mongodb
+    at Timeout._onTimeout (/app/node_modules/mongodb/lib/sdam/topology.js:285:38)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'mongo:27017' =&gt; ServerDescription {
+        address: 'mongo:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 1742034,
+        lastWriteDate: 0,
+</span></code></pre></div></div>
+<p><em>The Mongo Express container logs after attempting to connect to a wrong container</em></p>
 
 <p>In plain English:</p>
 
@@ -315,7 +343,7 @@ docker run <span class="nt">-d</span> <span class="nt">-p</span> 8081:8081 <span
 
   <footer>
   <span>
-    &copy; <time datetime="2025-08-15 15:41:35 +0530">2025</time> Richie Thomas. Made with Jekyll using the <a href="https://github.com/jitinnair1/tail">Tail</a> theme.
+    &copy; <time datetime="2025-08-15 15:49:09 +0530">2025</time> Richie Thomas. Made with Jekyll using the <a href="https://github.com/jitinnair1/tail">Tail</a> theme.
   </span>
 </footer>
 
